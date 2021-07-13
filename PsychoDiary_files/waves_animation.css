@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+main {
+    background-color: darkslategray;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+	height:20%;
+    width: 100%;
+}
+
+p {
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	margin:0;
+	padding:20px;
+}
+
+.waves {
+    width: 20px;
+    position: absolute;
+    height: 1.25px;
+    border-radius: 50%;
+    animation: wave_go infinite alternate;
+    animation-duration: 10s;
+	border: rgba(0, 112, 114, 1) solid 0.5px;
+    animation-delay: 10s;
+    z-index: 1;
+}
+
+#circleresponsive {
+	position:absolute;
+	width: 0px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+#wave2 {transform: rotate(10deg);}
+#wave3 {transform: rotate(20deg);}
+#wave4 {transform: rotate(30deg);}
+#wave5 {transform: rotate(40deg);}
+#wave6 {transform: rotate(50deg);}
+#wave7 {transform: rotate(60deg);}
+#wave8 {transform: rotate(70deg);}
+#wave9 {transform: rotate(80deg);}
+#wave10 {transform: rotate(90deg);}
+#wave11 {transform: rotate(100deg);}
+#wave12 {transform: rotate(110deg);}
+#wave13 {transform: rotate(120deg);}
+#wave14 {transform: rotate(130deg);}
+#wave15 {transform: rotate(140deg);}
+#wave16 {transform: rotate(150deg);}
+#wave17 {transform: rotate(160deg);}
+#wave18 {transform: rotate(170deg);}
+
+#circle {
+    height:50px;
+    width:50px;
+    background-color: darkturquoise;
+    border: none;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 9;
+}
+
+#circle:hover {
+    animation: circle_hover;
+    animation-duration: 1s;
+    height:80px;
+    width:80px;
+    border-radius: 100%;
+}
+
+#big_circle {
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rot infinite linear;
+    animation-duration: 10s;
+}
+
+
+#circle_minor {
+    height: 20px;
+    width: 20px;
+    background-color: darkturquoise;
+    border: none;
+    border-radius: 100%;
+    margin-left: 15rem;
+    transform: rotate(0deg);
+    animation: overload;
+    animation-duration: 2s;
+    box-shadow: 0px -5px rgba(0, 134, 136, 0.6);
+}
+
+@keyframes wave_go {
+    from {
+        width: 20px;
+        height: 1px;
+        border: rgba(0, 112, 114, 1) solid 10px;
+    }
+    to {
+        width: 100%;
+        height: 100px;
+        border: rgba(0, 112, 114, 1) solid 0.5px;
+    }
+}
+
+
+@keyframes circle_hover {
+    from {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+    to{
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+    }
+}
+
+@keyframes overload {
+    from {
+        margin-left: 20px;
+        transform: rotate(-90deg);
+    }
+    to {
+        margin-left: 15rem;
+        transform: rotate(0deg);
+    }
+}
+
+  /**
+ * Move in a circle without wrapper elements
+ * Idea by Aryeh Gregor, simplified by Lea Verou,posted by Tady Walsh, borrowed by me!
+ */
+
+@keyframes rot {
+    from {
+		transform: rotate(0deg)
+		           rotate(0deg);
+    }
+    to {
+		transform: rotate(180deg)
+		           rotate(180deg);
+    }
+}
