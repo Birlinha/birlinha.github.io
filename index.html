@@ -16,7 +16,6 @@
 	</head>
 	<body id="body">
 		<main id="main">
-			<div>
 				<a id="circle"></a>
 				<div id="big_circle">
 					<div id="circle_minor">
@@ -41,8 +40,7 @@
 					<div class="waves" id="wave16"></div>
 					<div class="waves" id="wave17"></div>
 					<div class="waves" id="wave18"></div>
-				</div>
-			</div>
+				</div> 
 		</main>
 		<footer>
 			<div style="background-color: black;">
@@ -54,10 +52,10 @@
 				<script>
 					window.onload = function change_element_to_2d_responsiveness() {
 						if(screen.width < screen.height){
-							document.getElementById("circleresponsive").style.width = ((screen.width/100)*80)+"px";
+							document.getElementById("circleresponsive").style.width = (screen.width*0.8)+"px";
 						}
 						else {
-							document.getElementById("circleresponsive").style.width = ((screen.height/100)*80)+"px";
+							document.getElementById("circleresponsive").style.width = (screen.height*0.8)+"px";
 						}
 					};
 				</script>

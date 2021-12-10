@@ -40,10 +40,10 @@ p {
 
 #circleresponsive {
 	position:absolute;
-	width: 0px;
+    height: 100%;
 	display:flex;
 	align-items:center;
-	justify-content:center;
+    justify-content: center;
 }
 
 #wave2 {transform: rotate(10deg);}
@@ -147,7 +147,7 @@ p {
 
   /**
  * Move in a circle without wrapper elements
- * Idea by Aryeh Gregor, simplified by Lea Verou,posted by Tady Walsh, borrowed by me!
+ * Idea by Aryeh Gregor, simplified by Lea Verou,posted by Tady Walsh, borrowed by Emilly!
  */
 
 @keyframes rot {
